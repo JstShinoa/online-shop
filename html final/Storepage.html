@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razer Store</title>
+    <link rel="stylesheet" href="Storepage.css">
+</head>
+<body>
+
+<header>
+    <h1>Our StorePage</h1>
+    <div class="header-buttons">
+        <button id="view-cart-button" onclick="window.location.href='add_to_cart_list.html'">View Cart</button>
+        <a href="main.html"><button class="cta-btn">HomePage</button></a>
+    </div>
+</header>
+
+<main>
+    <section>
+        <h2>Featured Product</h2>
+        <img id="rotating-product-image" src="https://techcrunch.com/wp-content/uploads/2021/02/keyboard.jpg" alt="Featured Product">
+    </section>
+
+    <section class="product-container">
+        <!-- Product 1 -->
+        <div class="product">
+            <a href="Product2.html">
+            <img src="https://mms.businesswire.com/media/20240409367997/en/2092466/4/03-2024-NERV-16x9-53.jpg" alt="Razer Keyboard" /></a>
+            <h3>Logitech Keyboard</h3>
+            <p>$89.99</p>
+            <button class="add-to-cart" onclick="addItemToCart('Razer Keyboard', 89.99, 1)">Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <a href="Product1.html">
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/12e450ff-54d1-4b9c-b5d8-04bd152e4478.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt="Razer Mouse" /></a>
+            <h3>Razer DeathAdder V2</h3>
+            <p>$29.99</p>
+            <button class="add-to-cart" onclick="addItemToCart('Razer Mouse', 29.99, 2)">Add to Cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <a href="product3.html">
+            <img src="https://i.ytimg.com/vi/KoWN3ZOS4so/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDiMbl6E1VZLbcO0w0ihfnZAE7QOA" alt="Razer Headset" /></a>
+            <h3>Gaming Headset</h3>
+            <p>$59.99</p>
+            <button class="add-to-cart" onclick="addItemToCart('Razer Headset', 59.99, 3)">Add to Cart</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+            <a href="Product4.html">
+            <img src="#" alt="#" /></a>
+            <h3>4</h3>
+            <p>N/A</p>
+            <button class="add-to-cart" onclick="addItemToCart('N/A', N/A, N/A)">Add to Cart</button>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product">
+            <a href="Product5.html">
+            <img src="#" alt="#" /></a>
+            <h3>5</h3>
+            <p>N/A</p>
+            <button class="add-to-cart" onclick="addItemToCart('N/A', N/A, N/A)">Add to Cart</button>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product">
+            <a href="Product6.html">
+            <img src="#" alt="#" /></a>
+            <h3>6</h3>
+            <p>N/A</p>
+            <button class="add-to-cart" onclick="addItemToCart('N/A', N/A, N/A)">Add to Cart</button>
+        </div>
+        <!-- Add more products if needed -->
+    </section>
+</main>
+
+<script src="Storepage.js"></script>
+</body>
+</html>
+
