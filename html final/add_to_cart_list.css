@@ -1,0 +1,163 @@
+/* General layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-bottom: 2px solid #ff0000;
+}
+
+h1 {
+    color: #ff0000;
+    margin: 0;
+}
+
+/* Buttons */
+.cta-btn,
+.checkbutton,
+.remove-btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover,
+.checkbutton:hover,
+.remove-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Cart items */
+.cart-list {
+    margin-top: 20px;
+}
+
+.cart-item {
+    background-color: #1a1a1a;
+    border: 1px solid #ff0000;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+}
+
+/* Cart total */
+#cart-total {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 8px;
+    border: 2px solid #ff0000;
+    width: 100%;
+    max-width: 500px;
+}
+
+.popup-content h2 {
+    color: #ff0000;
+}
+
+.popup-content label {
+    display: block;
+    margin-top: 15px;
+}
+
+.popup-content input,
+.popup-content textarea {
+    width: 100%;
+    padding: 8px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #ff0000;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+/* Close button */
+.close-btn {
+    float: right;
+    font-size: 24px;
+    color: #ff0000;
+    cursor: pointer;
+}
+/* Popup Styles */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Cart Item and Button Styles */
+.cart-item {
+    background-color: #2b2b2b;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.remove-btn, .edit-btn {
+    background-color: #ff0000;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-btn:hover, .edit-btn:hover {
+    background-color: #cc0000;
+}
