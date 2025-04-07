@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razer Store</title>
+    <link rel="stylesheet" href="Storepage.css">
+</head>
+<body>
+
+<header>
+    <h1>Our StorePage</h1>
+    <div class="header-buttons">
+        <button id="view-cart-button" onclick="window.location.href='add_to_cart_list.html'">View Cart</button>
+        <a href="main.html"><button class="cta-btn">HomePage</button></a>
+    </div>
+</header>
+
+<main>
+    <section>
+        <h2>Featured Product</h2>
+        <img id="rotating-product-image" src="https://techcrunch.com/wp-content/uploads/2021/02/keyboard.jpg" alt="Featured Product">
+    </section>
+
+    <section class="product-container">
+        <!-- Product 1 -->
+        <div class="product">
+            <a href="Product2.html">
+            <img src="https://resource.logitech.com/content/dam/gaming/en/products/pro-keyboard/pro-clicky-gallery-1.png" alt="Razer Keyboard" /></a>
+            <h3>Logitech G Pro X TKL LIGHTSPEED Wireless Gaming Keyboard</h3>
+            <p>$199.99</p>
+            <button class="add-to-cart" onclick="addItemToCart('Logitech Keyboard', 199.99, 1)">Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <a href="Product1.html">
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/12e450ff-54d1-4b9c-b5d8-04bd152e4478.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt="Razer Mouse" /></a>
+            <h3>Razer DeathAdder V2</h3>
+            <p>$99.99</p>
+            <button class="add-to-cart" onclick="addItemToCart('Razer DeathAdder V2', 99.99, 2)">Add to Cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <a href="product3.html">
+            <img src="https://assets-prd.ignimgs.com/2024/05/14/steelseries-arctis-nova-5-review-1715644977106.jpg" alt="Razer Headset" /></a>
+            <h3>Steelseries Arctis Nova 5 Wireless Headset</h3>
+            <p>$129.99</p>
+            <button class="add-to-cart" onclick="addItemToCart('Steelseries Arctis Nova 5 Wireless Headset', 129.99, 3)">Add to Cart</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+            <a href="Product4.html">
+            <img src="https://images.samsung.com/is/image/samsung/p6pim/ph/2401/gallery/ph-galaxy-s24-s928-sm-s928bzyqphl-539303996?$684_547_PNG$" alt="#" /></a>
+            <h3>Samsung Galaxy S24 Ultra 1TB Storage</h3>
+            <p>$1864.43</p>
+            <button class="add-to-cart" onclick="addItemToCart('Samsung Galaxy S24 Ultra', 1864.43, 4)">Add to Cart</button>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product">
+            <a href="Product5.html">
+            <img src="https://beyondthebox.ph/cdn/shop/files/IPHONE15PROMAX1_COLOR-NATURALTITANIUM_CAPACITY-ALL_700x700.jpg?v=1697192194" alt="#" /></a>
+            <h3>Apple iPhone 15 Pro Max 1TB Storage</h3>
+            <p>$1899.28</p>
+            <button class="add-to-cart" onclick="addItemToCart('Apple iPhone 15 Pro Max', 1899.28, 5)">Add to Cart</button>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product">
+            <a href="Product6.html">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/realme-gt5-pro.jpg" alt="#" /></a>
+            <h3>Realme GT5 Pro</h3>
+            <p>$460.00</p>
+            <button class="add-to-cart" onclick="addItemToCart('Realme GT5 Pro', 460, 6)">Add to Cart</button>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product">
+            <a href="Product7.html">
+            <img src="https://ecommerce.datablitz.com.ph/cdn/shop/files/1024_e145bab5-5cb4-49d6-9dfa-dc7b28c59237_800x.jpg?v=1743470985" alt="#" /></a>
+            <h3>MSI GeForce RTX™ 5080 VANGUARD SOC LAUNCH EDITION 16GB GDDR7 256-bit Graphics Card</h3>
+            <p>$1536.99</p>
+            <button class="add-to-cart" onclick="addItemToCart('MSI GeForce RTX™ 5080 VANGUARD SOC LAUNCH EDITION 16GB GDDR7 256-bit Graphics Card', 1536.99, 7)">Add to Cart</button>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product">
+            <a href="Product8.html">
+            <img src="https://www.guru3d.com/data/publish/221/709d11a6ad99fc53d632cbaf2a5eb84f96bb77/page5_4.webp" alt="#" /></a>
+            <h3>Yeston Sakura Radeon RX 7800 XT 16G GDDR6 256bit 5nm video cards Desktop computer PC Video Graphics Card</h3>
+            <p>$619.00</p>
+            <button class="add-to-cart" onclick="addItemToCart('Yeston Sakura Radeon RX 7800 XT 16G GDDR6 256bit 5nm video cards Desktop computer PC Video Graphics Card', 619.00, 8)">Add to Cart</button>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product">
+            <a href="Product9.html">
+            <img src="https://dynaquestpc.com/cdn/shop/files/63_b748be7a-ec08-4c20-a192-1f06ecbcf4d8.png?v=1706522326&width=1214" alt="#" /></a>
+            <h3>ADATA 512GB LEGEND 710 M.2 PCIe NVMe (ALEG-710-512GCS) Solid State Drive</h3>
+            <p>$31.37</p>
+            <button class="add-to-cart" onclick="addItemToCart('ADATA 512GB LEGEND 710 M.2 PCIe NVMe (ALEG-710-512GCS) Solid State Drive', 31.37, 9)">Add to Cart</button>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product">
+            <a href="Product10.html">
+            <img src="https://ecommerce.datablitz.com.ph/cdn/shop/products/h732_c72f9c1a-2d8a-40c0-be5b-995e8cab5297.jpg?v=1676923099" alt="#" /></a>
+            <h3>ASUS ROG Ryuo III 240 all-in-one liquid CPU cooler Fan</h3>
+            <p>$121.98</p>
+            <button class="add-to-cart" onclick="addItemToCart('ASUS ROG Ryuo III 240 all-in-one liquid CPU cooler Fan', 121.98, 10)">Add to Cart</button>
+        </div>
+
+        <!-- Product 11 -->
+        <div class="product">
+            <a href="Product11.html">
+            <img src="https://dynaquestpc.com/cdn/shop/products/NZXTH5FlowBlackTGATX2x120mmUSB31C1ACC-H51FB-01.jpg?v=1667549709" alt="#" /></a>
+            <h3>NZXT H5 Flow (CC-H51FB-01) Tempered Glass ATX Mid Tower Chassis (Black)</h3>
+            <p>$75.80</p>
+            <button class="add-to-cart" onclick="addItemToCart('NZXT H5 Flow (CC-H51FB-01) Tempered Glass ATX Mid Tower Chassis (Black)', 75.80, 11)">Add to Cart</button>
+        </div>
+
+        <!-- Product 12 -->
+        <div class="product">
+            <a href="Product12.html">
+            <img src="https://dynaquestpc.com/cdn/shop/files/Untitled-1_08b4986c-b0c9-4773-906f-7a9841981e77.png?v=1709372967" alt="#" /></a>
+            <h3>ASUS RT-AX52 AX1800 Dual Band WiFi 6 Router</h3>
+            <p>$29.62</p>
+            <button class="add-to-cart" onclick="addItemToCart('ASUS RT-AX52 AX1800 Dual Band WiFi 6 Router', 29.62, 12)">Add to Cart</button>
+        </div>
+
+        <!-- Product 13 -->
+        <div class="product">
+            <a href="Product13.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyW6f2PKiTebZYGX_4iaUSFOwNWKVo9j_Lng&s" alt="#" /></a>
+            <h3>AMSUNG 1TB T7 PortablSe External Solid State Drive (Gray)</h3>
+            <p>$99.33</p>
+            <button class="add-to-cart" onclick="addItemToCart('AMSUNG 1TB T7 PortablSe External Solid State Drive (Gray)', 99.33, 13)">Add to Cart</button>
+        </div>
+
+        <!-- Product 14 -->
+        <div class="product">
+            <a href="Product14.html">
+            <img src="https://shop.villman.com/cdn/shop/files/Layer57_500x_638daf11-92ea-4f61-b56e-133f61bd67fc_500x.png?v=1727834702" alt="#" /></a>
+            <h3>ACER Nitro V ANV15-41-R1GE GeForce RTX™ 2050 AMD Ryzen™ 5 Laptop (Obsidian Black)</h3>
+            <p>$784.16</p>
+            <button class="add-to-cart" onclick="addItemToCart('ACER Nitro V ANV15-41-R1GE GeForce RTX™ 2050 AMD Ryzen™ 5 Laptop (Obsidian Black)', 784.16, 14)">Add to Cart</button>
+        </div>
+
+        <!-- Product 15 -->
+        <div class="product">
+            <a href="Product15.html">
+            <img src="https://gamextreme.ph/cdn/shop/files/live-web.png?v=1741764607" alt="#" /></a>
+            <h3>ASUS ROG Ally 16G/512GB AMD Ryzen Z1 EXTREME (RC71L-NH001W) Handheld Console</h3>
+            <p>$766.67</p>
+            <button class="add-to-cart" onclick="addItemToCart('ASUS ROG Ally 16G/512GB AMD Ryzen Z1 EXTREME (RC71L-NH001W) Handheld Console', 766.67, 15)">Add to Cart</button>
+        </div>
+
+        <!-- Product 16 -->
+        <div class="product">
+            <a href="Product16.html">
+            <img src="https://www.gigahertz.com.ph/cdn/shop/files/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd-microsoft-gigahertz-181906_1024x.jpg?v=1726732897" alt="#" /></a>
+            <h3>WINDOWS 11 PROFESSIONAL 64 BIT ENG INTERNATIONAL (FQC-10528/21H2) OEM</h3>
+            <p>$165.55</p>
+            <button class="add-to-cart" onclick="addItemToCart('WINDOWS 11 PROFESSIONAL 64 BIT ENG INTERNATIONAL (FQC-10528/21H2) OEM', 165.55, 16)">Add to Cart</button>
+        </div>
+        <!-- Add more products if needed -->
+    </section>
+</main>
+
+<script src="Storepage.js"></script>
+</body>
+</html>
+
